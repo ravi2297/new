@@ -3,7 +3,7 @@ package interview;
 public class Separate_vowels_and_String {
 	public static void main(String[] args)
 	{
-	String text="java caode";
+	String text="java code";
 	
 	//separate vowels and consonants from String 
 	

@@ -5,19 +5,50 @@ import java.util.LinkedHashSet;
 public class Find_duplicates_from_string {
 	public static void main(String[] args)
 	{
-		//find duplicates charactes in String
-		String text="java code";
+//		//find duplicates charactes in String
+//		String text="java code";
+//		
+//		char[] ch=text.toCharArray();
+//		
+//		LinkedHashSet<Character> ls=new LinkedHashSet<Character>();
+//		
+//		for (char e:ch)
+//		{
+//			if (ls.add(e)==false)
+//			{
+//				System.out.print(e+" ");
+//			}
+//		}
 		
-		char[] ch=text.toCharArray();
+		String name="java Programming";
+		char[] ch=name.toCharArray();
+		int count=0;
 		
-		LinkedHashSet<Character> ls=new LinkedHashSet<Character>();
-		
-		for (char e:ch)
+		for (int i=0;i<ch.length;i++)
 		{
-			if (ls.add(e)==false)
+			
+			for (int j=i+1;j<ch.length;j++)
 			{
-				System.out.print(e+" ");
+				if(ch[i] == ch[j])
+				{
+					System.out.println("duplicate characters are :" + ch[i]);
+					count++;
+					
+				}
 			}
+			
 		}
+		System.out.println("the duplicate characters are :" + count);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 	}
 }

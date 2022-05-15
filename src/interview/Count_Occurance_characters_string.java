@@ -36,6 +36,29 @@ public class Count_Occurance_characters_string {
 		}
 		System.out.println("a is occurs" + count + " times");
 
+//_________________________________________________________________________________________________
+		
+		String name="java code";
+		
+		char[] p=name.toCharArray();
+		for(int i=0;i<p.length;i++)
+		{
+			
+			int cont=1;
+			for(int j=i+1;j<p.length;j++)
+			{
+				if (p[i] == p[j])
+				{
+					cont++;
+				}
+			}
+			
+			System.out.println("the occurence of "+p[i]+ " is :" + cont);
+			
+			
+			
+		}
+		
 		
 	}
 }

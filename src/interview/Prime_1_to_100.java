@@ -6,9 +6,10 @@ public class Prime_1_to_100 {
 	{
 		System.out.println("prime numbers between 1 to 100 : ");
 		System.out.println();
+		
 		for (int i=1;i<=100;i++)
 		{
-			int count=0;
+			int count=0;   //always mention count here...
 			for (int j=1;j<=i;j++)
 			{
 				if (i%j == 0)

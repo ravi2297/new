@@ -3,7 +3,7 @@ package interview;
 import java.util.Arrays;
 import java.util.HashSet;
 
-public class Array_Duplicate_remove {
+public class Array_Find_Duplicate_unique {
 
 	public static void main(String[] args)
 	{
@@ -24,6 +24,52 @@ public class Array_Duplicate_remove {
 			}
 			
 		}
+		
+		
+		
+// find Unique in array.............
+		
+		int[] num={12,15,12,10,90,45};
+		
+		for (int i=0;i<num.length;i++)
+		
+		{
+			int count=0;
+			for (int j=0;j<num.length;j++)
+			{
+				if (num[i]==num[j])
+				{
+					count++;
+				}
+				
+				
+			}
+			if(count==1)
+			{
+			System.out.println(num[i]);
+			}
+		}
+		
+		//Find Duplicates in array.................
+
+		int[] b={10,12,15,12,10,90,45};
+		
+		for (int i=0;i<b.length;i++)
+		
+		{
+			int count=0;
+			for (int j=i+1;j<b.length;j++)
+			{
+				if (b[i]==b[j])
+				{
+					System.out.println(b[j]);
+				}
+				
+				
+			}
+			
+		}
+		
 		
 		
 	}

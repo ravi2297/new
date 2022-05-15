@@ -2,17 +2,28 @@ package regular_program;
 
 public class ConstructorCopy {
 
-	private static final String names = null;
 	String name;
 	ConstructorCopy(String names)
 	{
 		name=names;
-		System.out.println("default constructor get called.");
 	}
 	
 	ConstructorCopy(ConstructorCopy e)
 	{
-		name=e.names;
+		name=e.name;
+		
+	}
+	
+	public void display()
+	{
+		System.out.println("this is display "+name);
+	}
+	
+	public static void main(String[] args) {
+		ConstructorCopy obj=new ConstructorCopy("mango");
+		ConstructorCopy obj1=new ConstructorCopy(obj);
+		obj.display();
+		obj1.display();
 		
 	}
 	
